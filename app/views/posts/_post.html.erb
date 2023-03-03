@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <p >
+      <%= post.title %>
+    </p>
+  </div>
+  <% if user_signed_in? %>
+    <p><strong><%= post.user.email %></strong></p>
+  <% end %>
+</div>
